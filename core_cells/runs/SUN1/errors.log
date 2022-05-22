@@ -1,0 +1,16 @@
+[ERROR]: during executing openroad script /openlane/scripts/openroad/replace.tcl
+[ERROR]: Exit code: 1
+[ERROR]: full log: designs/core_cells/runs/SUN1/logs/placement/8-global.log
+[ERROR]: Last 10 lines:
+[NesterovSolve] Iter: 420 overflow: 0.366096 HPWL: 3911474
+[NesterovSolve] Iter: 430 overflow: 0.364973 HPWL: 3911159
+[NesterovSolve] Iter: 440 overflow: 0.363712 HPWL: 3910710
+[NesterovSolve] Iter: 450 overflow: 0.361625 HPWL: 3910926
+[NesterovSolve] Iter: 460 overflow: 0.355457 HPWL: 3916474
+[INFO GPL-0100] worst slack 6.83e-09
+[INFO GPL-0103] Weighted 1 nets.
+[ERROR GPL-0306] RePlAce diverged at wire/density gradient Sum.
+Error: replace.tcl, 91 GPL-0306
+child process exited abnormally
+
+[ERROR]: Flow failed.

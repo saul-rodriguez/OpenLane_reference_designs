@@ -1,0 +1,35 @@
+digraph "core_cells" {
+label="core_cells";
+rankdir="LR";
+remincross=true;
+n3 [ shape=diamond, label="out_c2", color="black", fontcolor="black" ];
+n4 [ shape=octagon, label="out2", color="black", fontcolor="black" ];
+n5 [ shape=octagon, label="out1", color="black", fontcolor="black" ];
+n6 [ shape=octagon, label="reset", color="black", fontcolor="black" ];
+n7 [ shape=octagon, label="clk", color="black", fontcolor="black" ];
+n8 [ shape=octagon, label="enable", color="black", fontcolor="black" ];
+n9 [ shape=octagon, label="vssd1", color="black", fontcolor="black" ];
+n10 [ shape=octagon, label="vccd1", color="black", fontcolor="black" ];
+c12 [ shape=record, label="{{<p7> clk|<p8> enable|<p6> reset}|c2\ncounter|{<p11> out|<p10> vccd1|<p9> vssd1}}" ];
+c13 [ shape=record, label="{{<p7> clk|<p8> enable|<p6> reset}|c1\ncounter|{<p11> out|<p10> vccd1|<p9> vssd1}}" ];
+c16 [ shape=record, label="{{<p14> A}|$2\n$reduce_and|{<p15> Y}}" ];
+p0 [shape=box, style=rounded, label="PROC $1\n/openlane/designs/core_cells/src/core_cells.v:26.1-33.4"];
+c16:p15:e -> p0:w [color="black", label=""];
+c12:p10:e -> n10:w [color="black", label=""];
+c13:p10:e -> n10:w [color="black", label=""];
+c12:p11:e -> n3:w [color="black", style="setlinewidth(3)", label=""];
+n3:e -> c16:p14:w [color="black", style="setlinewidth(3)", label=""];
+p0:e -> n4:w [color="black", label=""];
+n4:e -> p0:w [color="black", label=""];
+c13:p11:e -> n5:w [color="black", style="setlinewidth(3)", label=""];
+n6:e -> c12:p6:w [color="black", label=""];
+n6:e -> c13:p6:w [color="black", label=""];
+n6:e -> p0:w [color="black", label=""];
+n7:e -> c12:p7:w [color="black", label=""];
+n7:e -> c13:p7:w [color="black", label=""];
+n7:e -> p0:w [color="black", label=""];
+n8:e -> c12:p8:w [color="black", label=""];
+n8:e -> c13:p8:w [color="black", label=""];
+c12:p9:e -> n9:w [color="black", label=""];
+c13:p9:e -> n9:w [color="black", label=""];
+}

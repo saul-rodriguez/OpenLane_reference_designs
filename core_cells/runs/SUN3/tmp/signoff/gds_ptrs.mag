@@ -1,0 +1,6 @@
+<< properties >>
+string FIXED_BBOX 0 0 100000 100000
+string GDS_END 2963374
+string GDS_FILE /openlane/designs/core_cells/runs/SUN3/results/signoff/core_cells.magic.gds
+string GDS_START 490128
+<< end >>

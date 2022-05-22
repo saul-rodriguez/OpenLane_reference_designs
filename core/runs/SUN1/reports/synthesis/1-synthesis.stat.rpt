@@ -1,0 +1,17 @@
+
+9. Printing statistics.
+
+=== core ===
+
+   Number of wires:                  9
+   Number of wire bits:             12
+   Number of public wires:           9
+   Number of public wire bits:      12
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     counter                         2
+
+   Area for cell type \counter is unknown!
+

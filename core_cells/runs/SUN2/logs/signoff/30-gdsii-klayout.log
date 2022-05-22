@@ -1,0 +1,18 @@
+
+Input: /openlane/designs/core_cells/runs/SUN2/results/routing/core_cells.def
+Output: /openlane/designs/core_cells/runs/SUN2/results/signoff/core_cells.klayout.gds
+Design: core_cells
+Technology File: /home/saul/installs/openlane/OpenLane/pdks/sky130A/libs.tech/klayout/sky130A.lyt
+GDS File List: ['/home/saul/installs/openlane/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds', '/openlane/designs/core_cells/macros/counter.gds']
+LEF File: /openlane/designs/core_cells/runs/SUN2/tmp/merged.nom.lef
+
+[INFO] Clearing cells...
+[INFO] Merging GDS files...
+	/home/saul/installs/openlane/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+	/openlane/designs/core_cells/macros/counter.gds
+[INFO] Copying toplevel cell 'core_cells'
+WARNING: no fill config file specified
+[INFO] Checking for missing GDS...
+[INFO] All LEF cells have matching GDS cells
+[INFO] Writing out GDS '/openlane/designs/core_cells/runs/SUN2/results/signoff/core_cells.klayout.gds'
+[INFO] Done.

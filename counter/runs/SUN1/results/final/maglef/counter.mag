@@ -1,0 +1,82 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1653180706
+<< obsli1 >>
+rect 1104 2159 16192 32113
+<< obsm1 >>
+rect 14 2128 16352 32144
+<< metal2 >>
+rect 9678 33788 9734 34588
+rect 18 0 74 800
+rect 14186 0 14242 800
+<< obsm2 >>
+rect 20 33732 9622 33946
+rect 9790 33732 16346 33946
+rect 20 856 16346 33732
+rect 130 800 14130 856
+rect 14298 800 16346 856
+<< metal3 >>
+rect 0 29928 800 30048
+rect 16526 26528 17326 26648
+rect 0 14968 800 15088
+rect 16526 11568 17326 11688
+<< obsm3 >>
+rect 800 30128 16526 32129
+rect 880 29848 16526 30128
+rect 800 26728 16526 29848
+rect 800 26448 16446 26728
+rect 800 15168 16526 26448
+rect 880 14888 16526 15168
+rect 800 11768 16526 14888
+rect 800 11488 16446 11768
+rect 800 2143 16526 11488
+<< metal4 >>
+rect 2830 2128 3150 32144
+rect 4716 2128 5036 32144
+rect 6602 2128 6922 32144
+rect 8488 2128 8808 32144
+rect 10374 2128 10694 32144
+rect 12260 2128 12580 32144
+rect 14146 2128 14466 32144
+rect 16032 2128 16352 32144
+<< labels >>
+rlabel metal3 s 16526 26528 17326 26648 6 clk
+port 1 nsew signal input
+rlabel metal2 s 14186 0 14242 800 6 enable
+port 2 nsew signal input
+rlabel metal3 s 0 14968 800 15088 6 out[0]
+port 3 nsew signal output
+rlabel metal2 s 18 0 74 800 6 out[1]
+port 4 nsew signal output
+rlabel metal3 s 0 29928 800 30048 6 out[2]
+port 5 nsew signal output
+rlabel metal2 s 9678 33788 9734 34588 6 out[3]
+port 6 nsew signal output
+rlabel metal3 s 16526 11568 17326 11688 6 reset
+port 7 nsew signal input
+rlabel metal4 s 2830 2128 3150 32144 6 vccd1
+port 8 nsew power bidirectional
+rlabel metal4 s 6602 2128 6922 32144 6 vccd1
+port 8 nsew power bidirectional
+rlabel metal4 s 10374 2128 10694 32144 6 vccd1
+port 8 nsew power bidirectional
+rlabel metal4 s 14146 2128 14466 32144 6 vccd1
+port 8 nsew power bidirectional
+rlabel metal4 s 4716 2128 5036 32144 6 vssd1
+port 9 nsew ground bidirectional
+rlabel metal4 s 8488 2128 8808 32144 6 vssd1
+port 9 nsew ground bidirectional
+rlabel metal4 s 12260 2128 12580 32144 6 vssd1
+port 9 nsew ground bidirectional
+rlabel metal4 s 16032 2128 16352 32144 6 vssd1
+port 9 nsew ground bidirectional
+<< properties >>
+string FIXED_BBOX 0 0 17326 34588
+string LEFclass BLOCK
+string LEFview TRUE
+string GDS_END 464286
+string GDS_FILE /openlane/designs/counter/runs/SUN1/results/signoff/counter.magic.gds
+string GDS_START 104230
+<< end >>
+

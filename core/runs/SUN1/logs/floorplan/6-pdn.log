@@ -1,0 +1,148 @@
+OpenROAD 79a46b62da64bbebc18f06b20c42211046de719a 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /openlane/designs/core/runs/SUN1/tmp/merged.unpadded.nom.lef
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 442 library cells
+[INFO ODB-0226] Finished LEF file:  /openlane/designs/core/runs/SUN1/tmp/merged.unpadded.nom.lef
+[INFO ODB-0127] Reading DEF file: /openlane/designs/core/runs/SUN1/tmp/floorplan/4-io.macro_placement.def
+[INFO ODB-0128] Design: core
+[INFO ODB-0130]     Created 8 pins.
+[INFO ODB-0131]     Created 2 components and 18 component-terminals.
+[INFO ODB-0133]     Created 11 nets and 14 connections.
+[INFO ODB-0134] Finished DEF file: /openlane/designs/core/runs/SUN1/tmp/floorplan/4-io.macro_placement.def
+[INFO PDN-0001] Inserting grid: stdcell_grid
+[INFO PDN-0001] Inserting grid: macro - c1
+[INFO PDN-0001] Inserting grid: macro - c2
+[WARNING PSM-0016] Voltage pad location (VSRC) file not specified, defaulting pad location to checkerboard pattern on core area.
+[WARNING PSM-0017] X direction bump pitch is not specified, defaulting to 140um.
+[WARNING PSM-0018] Y direction bump pitch is not specified, defaulting to 140um.
+[WARNING PSM-0019] Voltage on net vccd1 is not explicitly set.
+[WARNING PSM-0022] Using voltage 1.800V for VDD network.
+[WARNING PSM-0065] VSRC location not specified, using default checkerboard pattern with one VDD every size bumps in x-direction and one in two bumps in the y-direction
+[WARNING PSM-0030] VSRC location at (285.520um, 150.880um) and size 10.000um, is not located on an existing power stripe node. Moving to closest node at (314.950um, 190.880um).
+[INFO PSM-0031] Number of PDN nodes on net vccd1 = 52.
+[WARNING PSM-0032] Node at (361800, 24590) and layer 5 moved from (371530, 190880).
+[WARNING PSM-0032] Node at (361800, 24590) and layer 5 moved from (352670, 190880).
+[WARNING PSM-0032] Node at (361800, 24590) and layer 5 moved from (333810, 190880).
+[WARNING PSM-0032] Node at (361800, 24590) and layer 5 moved from (314950, 190880).
+[WARNING PSM-0032] Node at (183600, 24590) and layer 5 moved from (171530, 190880).
+[WARNING PSM-0032] Node at (183600, 24590) and layer 5 moved from (152670, 190880).
+[WARNING PSM-0032] Node at (5400, 248880) and layer 5 moved from (133810, 190880).
+[WARNING PSM-0032] Node at (5400, 248880) and layer 5 moved from (114950, 190880).
+[WARNING PSM-0032] Node at (507600, 248880) and layer 5 moved from (509540, 502380).
+[WARNING PSM-0032] Node at (507600, 248880) and layer 5 moved from (509540, 370880).
+[WARNING PSM-0032] Node at (507600, 248880) and layer 5 moved from (509540, 190880).
+[WARNING PSM-0032] Node at (507600, 248880) and layer 5 moved from (509540, 10880).
+[WARNING PSM-0032] Node at (507600, 248880) and layer 5 moved from (509540, -4620).
+[WARNING PSM-0032] Node at (361800, 380760) and layer 5 moved from (365520, 502380).
+[WARNING PSM-0032] Node at (361800, 380760) and layer 5 moved from (365520, 370880).
+[WARNING PSM-0032] Node at (361800, 24590) and layer 5 moved from (365520, 10880).
+[WARNING PSM-0032] Node at (361800, 24590) and layer 5 moved from (365520, -4620).
+[WARNING PSM-0032] Node at (183600, 380760) and layer 5 moved from (185520, 502380).
+[WARNING PSM-0032] Node at (183600, 380760) and layer 5 moved from (185520, 370880).
+[WARNING PSM-0032] Node at (183600, 24590) and layer 5 moved from (185520, 10880).
+[WARNING PSM-0032] Node at (183600, 24590) and layer 5 moved from (185520, -4620).
+[WARNING PSM-0032] Node at (5400, 248880) and layer 5 moved from (5520, 502380).
+[WARNING PSM-0032] Node at (5400, 248880) and layer 5 moved from (5520, 370880).
+[WARNING PSM-0032] Node at (5400, 248880) and layer 5 moved from (5520, 190880).
+[WARNING PSM-0032] Node at (183600, 24590) and layer 5 moved from (5520, 10880).
+[WARNING PSM-0032] Node at (183600, 24590) and layer 5 moved from (5520, -4620).
+[WARNING PSM-0032] Node at (-10800, 248880) and layer 5 moved from (-9980, 502380).
+[WARNING PSM-0032] Node at (-10800, 248880) and layer 5 moved from (-9980, 370880).
+[WARNING PSM-0032] Node at (-10800, 248880) and layer 5 moved from (-9980, 190880).
+[WARNING PSM-0032] Node at (-10800, 248880) and layer 5 moved from (-9980, 10880).
+[WARNING PSM-0032] Node at (-10800, 248880) and layer 5 moved from (-9980, -4620).
+[INFO PSM-0064] Number of voltage sources = 2.
+[INFO PSM-0040] All PDN stripes on net vccd1 are connected.
+[WARNING PSM-0016] Voltage pad location (VSRC) file not specified, defaulting pad location to checkerboard pattern on core area.
+[WARNING PSM-0017] X direction bump pitch is not specified, defaulting to 140um.
+[WARNING PSM-0018] Y direction bump pitch is not specified, defaulting to 140um.
+[WARNING PSM-0019] Voltage on net vssd1 is not explicitly set.
+[WARNING PSM-0021] Using voltage 0.000V for ground network.
+[WARNING PSM-0065] VSRC location not specified, using default checkerboard pattern with one VDD every size bumps in x-direction and one in two bumps in the y-direction
+[WARNING PSM-0030] VSRC location at (5.520um, 10.880um) and size 10.000um, is not located on an existing power stripe node. Moving to closest node at (-14.680um, -9.320um).
+[WARNING PSM-0030] VSRC location at (285.520um, 150.880um) and size 10.000um, is not located on an existing power stripe node. Moving to closest node at (275.520um, 100.880um).
+[INFO PSM-0031] Number of PDN nodes on net vssd1 = 50.
+[WARNING PSM-0032] Node at (453600, 248880) and layer 5 moved from (380960, 100880).
+[WARNING PSM-0032] Node at (275400, 248880) and layer 5 moved from (362100, 100880).
+[WARNING PSM-0032] Node at (275400, 248880) and layer 5 moved from (343240, 100880).
+[WARNING PSM-0032] Node at (275400, 248880) and layer 5 moved from (324380, 100880).
+[WARNING PSM-0032] Node at (270000, 248880) and layer 5 moved from (180960, 100880).
+[WARNING PSM-0032] Node at (270000, 248880) and layer 5 moved from (162100, 100880).
+[WARNING PSM-0032] Node at (270000, 248880) and layer 5 moved from (143240, 100880).
+[WARNING PSM-0032] Node at (270000, 248880) and layer 5 moved from (124380, 100880).
+[WARNING PSM-0032] Node at (513000, 248880) and layer 5 moved from (514240, 507080).
+[WARNING PSM-0032] Node at (513000, 248880) and layer 5 moved from (514240, 460880).
+[WARNING PSM-0032] Node at (513000, 248880) and layer 5 moved from (514240, 280880).
+[WARNING PSM-0032] Node at (513000, 248880) and layer 5 moved from (514240, 100880).
+[WARNING PSM-0032] Node at (513000, 248880) and layer 5 moved from (514240, -9320).
+[WARNING PSM-0032] Node at (453600, 248880) and layer 5 moved from (455520, 507080).
+[WARNING PSM-0032] Node at (453600, 248880) and layer 5 moved from (455520, 460880).
+[WARNING PSM-0032] Node at (453600, 248880) and layer 5 moved from (455520, 280880).
+[WARNING PSM-0032] Node at (453600, 248880) and layer 5 moved from (455520, 100880).
+[WARNING PSM-0032] Node at (453600, 248880) and layer 5 moved from (455520, -9320).
+[WARNING PSM-0032] Node at (275400, 248880) and layer 5 moved from (275520, 507080).
+[WARNING PSM-0032] Node at (275400, 248880) and layer 5 moved from (275520, 460880).
+[WARNING PSM-0032] Node at (275400, 248880) and layer 5 moved from (275520, 280880).
+[WARNING PSM-0032] Node at (275400, 248880) and layer 5 moved from (275520, 100880).
+[WARNING PSM-0032] Node at (275400, 248880) and layer 5 moved from (275520, -9320).
+[WARNING PSM-0032] Node at (91800, 380760) and layer 5 moved from (95520, 507080).
+[WARNING PSM-0032] Node at (91800, 380760) and layer 5 moved from (95520, 460880).
+[WARNING PSM-0032] Node at (91800, 380760) and layer 5 moved from (95520, 280880).
+[WARNING PSM-0032] Node at (-10800, 248880) and layer 5 moved from (-14680, 507080).
+[WARNING PSM-0032] Node at (-10800, 248880) and layer 5 moved from (-14680, 460880).
+[WARNING PSM-0032] Node at (-10800, 248880) and layer 5 moved from (-14680, 280880).
+[WARNING PSM-0032] Node at (-10800, 248880) and layer 5 moved from (-14680, 100880).
+[WARNING PSM-0032] Node at (-10800, 248880) and layer 5 moved from (-14680, -9320).
+[INFO PSM-0064] Number of voltage sources = 2.
+[INFO PSM-0040] All PDN stripes on net vssd1 are connected.
+[INFO]: Setting RC values...
+[INFO PSM-0002] Output voltage file is specified as: /openlane/designs/core/runs/SUN1/tmp/floorplan/6-pdn.pga.rpt.
+[WARNING PSM-0016] Voltage pad location (VSRC) file not specified, defaulting pad location to checkerboard pattern on core area.
+[WARNING PSM-0017] X direction bump pitch is not specified, defaulting to 140um.
+[WARNING PSM-0018] Y direction bump pitch is not specified, defaulting to 140um.
+[WARNING PSM-0019] Voltage on net vccd1 is not explicitly set.
+[WARNING PSM-0022] Using voltage 1.800V for VDD network.
+[WARNING PSM-0065] VSRC location not specified, using default checkerboard pattern with one VDD every size bumps in x-direction and one in two bumps in the y-direction
+[WARNING PSM-0030] VSRC location at (285.520um, 150.880um) and size 10.000um, is not located on an existing power stripe node. Moving to closest node at (314.950um, 190.880um).
+[INFO PSM-0031] Number of PDN nodes on net vccd1 = 52.
+[WARNING PSM-0032] Node at (361800, 24590) and layer 5 moved from (371530, 190880).
+[WARNING PSM-0032] Node at (361800, 24590) and layer 5 moved from (352670, 190880).
+[WARNING PSM-0032] Node at (361800, 24590) and layer 5 moved from (333810, 190880).
+[WARNING PSM-0032] Node at (361800, 24590) and layer 5 moved from (314950, 190880).
+[WARNING PSM-0032] Node at (183600, 24590) and layer 5 moved from (171530, 190880).
+[WARNING PSM-0032] Node at (183600, 24590) and layer 5 moved from (152670, 190880).
+[WARNING PSM-0032] Node at (5400, 248880) and layer 5 moved from (133810, 190880).
+[WARNING PSM-0032] Node at (5400, 248880) and layer 5 moved from (114950, 190880).
+[WARNING PSM-0032] Node at (507600, 248880) and layer 5 moved from (509540, 502380).
+[WARNING PSM-0032] Node at (507600, 248880) and layer 5 moved from (509540, 370880).
+[WARNING PSM-0032] Node at (507600, 248880) and layer 5 moved from (509540, 190880).
+[WARNING PSM-0032] Node at (507600, 248880) and layer 5 moved from (509540, 10880).
+[WARNING PSM-0032] Node at (507600, 248880) and layer 5 moved from (509540, -4620).
+[WARNING PSM-0032] Node at (361800, 380760) and layer 5 moved from (365520, 502380).
+[WARNING PSM-0032] Node at (361800, 380760) and layer 5 moved from (365520, 370880).
+[WARNING PSM-0032] Node at (361800, 24590) and layer 5 moved from (365520, 10880).
+[WARNING PSM-0032] Node at (361800, 24590) and layer 5 moved from (365520, -4620).
+[WARNING PSM-0032] Node at (183600, 380760) and layer 5 moved from (185520, 502380).
+[WARNING PSM-0032] Node at (183600, 380760) and layer 5 moved from (185520, 370880).
+[WARNING PSM-0032] Node at (183600, 24590) and layer 5 moved from (185520, 10880).
+[WARNING PSM-0032] Node at (183600, 24590) and layer 5 moved from (185520, -4620).
+[WARNING PSM-0032] Node at (5400, 248880) and layer 5 moved from (5520, 502380).
+[WARNING PSM-0032] Node at (5400, 248880) and layer 5 moved from (5520, 370880).
+[WARNING PSM-0032] Node at (5400, 248880) and layer 5 moved from (5520, 190880).
+[WARNING PSM-0032] Node at (183600, 24590) and layer 5 moved from (5520, 10880).
+[WARNING PSM-0032] Node at (183600, 24590) and layer 5 moved from (5520, -4620).
+[WARNING PSM-0032] Node at (-10800, 248880) and layer 5 moved from (-9980, 502380).
+[WARNING PSM-0032] Node at (-10800, 248880) and layer 5 moved from (-9980, 370880).
+[WARNING PSM-0032] Node at (-10800, 248880) and layer 5 moved from (-9980, 190880).
+[WARNING PSM-0032] Node at (-10800, 248880) and layer 5 moved from (-9980, 10880).
+[WARNING PSM-0032] Node at (-10800, 248880) and layer 5 moved from (-9980, -4620).
+[INFO PSM-0064] Number of voltage sources = 2.
+[INFO PSM-0040] All PDN stripes on net vccd1 are connected.
+########## IR report #################
+Worstcase voltage: 1.80e+00 V
+Average IR drop  : 1.78e-13 V
+Worstcase IR drop: 0.00e+00 V
+######################################

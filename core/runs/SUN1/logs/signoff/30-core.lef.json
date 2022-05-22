@@ -1,0 +1,73 @@
+[
+  {
+   "pins": [
+      [
+        "clk",
+        "enable",
+        "out[0]",
+        "out[1]",
+        "out[2]",
+        "out[3]",
+        "reset",
+        "vccd1",
+        "vssd1"
+      ], [
+        "clk",
+        "enable",
+        "out[0]",
+        "out[1]",
+        "out[2]",
+        "out[3]",
+        "reset",
+        "vccd1",
+        "vssd1"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "core",
+      "core"
+   ],
+   "devices": [
+       [
+         ["counter", 2 ]
+       ], [
+         ["counter", 2 ]
+       ]
+   ],
+   "nets": [
+    13,
+    13
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "out2",
+        "out1[3]",
+        "out1[2]",
+        "out1[1]",
+        "out1[0]",
+        "clk",
+        "enable",
+        "reset",
+        "vccd1",
+        "vssd1"
+      ], [
+        "out2",
+        "out1[3]",
+        "out1[2]",
+        "out1[1]",
+        "out1[0]",
+        "clk",
+        "enable",
+        "reset",
+        "vccd1",
+        "vssd1"
+      ]
+   ]
+  }
+]

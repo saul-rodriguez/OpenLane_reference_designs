@@ -1,0 +1,18 @@
+OpenROAD 79a46b62da64bbebc18f06b20c42211046de719a 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /openlane/designs/core_cells/runs/SUN5/tmp/merged.unpadded.nom.lef
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 442 library cells
+[INFO ODB-0226] Finished LEF file:  /openlane/designs/core_cells/runs/SUN5/tmp/merged.unpadded.nom.lef
+[INFO ODB-0127] Reading DEF file: /openlane/designs/core_cells/runs/SUN5/results/routing/core_cells.def
+[INFO ODB-0128] Design: core_cells
+[INFO ODB-0130]     Created 10 pins.
+[INFO ODB-0131]     Created 19706 components and 73470 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 73402 connections.
+[INFO ODB-0133]     Created 25 nets and 68 connections.
+[INFO ODB-0134] Finished DEF file: /openlane/designs/core_cells/runs/SUN5/results/routing/core_cells.def
+Notice 0: Split top of 4 T shapes.
+[INFO ANT-0001] Found 0 pin violations.
+[INFO ANT-0002] Found 0 net violations in 25 nets.

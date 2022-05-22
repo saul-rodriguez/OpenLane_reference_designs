@@ -1,0 +1,19 @@
+
+11. Printing statistics.
+
+=== core_cells ===
+
+   Number of wires:                 11
+   Number of wire bits:             17
+   Number of public wires:           8
+   Number of public wire bits:      14
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     $_ANDNOT_                       1
+     $_AND_                          1
+     $_NAND_                         1
+     $_SDFF_PP0_                     1
+     counter                         2
+

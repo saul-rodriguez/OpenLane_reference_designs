@@ -1,0 +1,484 @@
+OpenROAD 79a46b62da64bbebc18f06b20c42211046de719a 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /openlane/designs/core_cells/runs/SUN2/tmp/merged.unpadded.nom.lef
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 442 library cells
+[INFO ODB-0226] Finished LEF file:  /openlane/designs/core_cells/runs/SUN2/tmp/merged.unpadded.nom.lef
+[INFO ODB-0127] Reading DEF file: /openlane/designs/core_cells/runs/SUN2/tmp/routing/14-resizer_timing.def
+[INFO ODB-0128] Design: core_cells
+[INFO ODB-0130]     Created 10 pins.
+[INFO ODB-0131]     Created 3356 components and 8043 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 8002 connections.
+[INFO ODB-0133]     Created 22 nets and 41 connections.
+[INFO ODB-0134] Finished DEF file: /openlane/designs/core_cells/runs/SUN2/tmp/routing/14-resizer_timing.def
+###############################################################################
+# Created by write_sdc
+# Sun May 22 08:32:20 2022
+###############################################################################
+current_design core_cells
+###############################################################################
+# Timing Constraints
+###############################################################################
+create_clock -name clk -period 10.0000 [get_ports {clk}]
+set_clock_transition 0.1500 [get_clocks {clk}]
+set_clock_uncertainty 0.2500 clk
+set_propagated_clock [get_clocks {clk}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {enable}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {reset}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {out1[0]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {out1[1]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {out1[2]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {out1[3]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {out2}]
+###############################################################################
+# Environment
+###############################################################################
+set_load -pin_load 0.0334 [get_ports {out2}]
+set_load -pin_load 0.0334 [get_ports {out1[3]}]
+set_load -pin_load 0.0334 [get_ports {out1[2]}]
+set_load -pin_load 0.0334 [get_ports {out1[1]}]
+set_load -pin_load 0.0334 [get_ports {out1[0]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {clk}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {enable}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {reset}]
+set_timing_derate -early 0.9500
+set_timing_derate -late 1.0500
+###############################################################################
+# Design Rules
+###############################################################################
+set_max_fanout 5.0000 [current_design]
+[INFO]: Setting signal min routing layer to: met1 and clock min routing layer to met1. 
+[INFO]: Setting signal max routing layer to: met5 and clock max routing layer to met5. 
+-congestion_iterations 50 -verbose
+[INFO GRT-0020] Min routing layer: met1
+[INFO GRT-0021] Max routing layer: met5
+[INFO GRT-0022] Global adjustment: 30%
+[INFO GRT-0023] Grid origin: (0, 0)
+[WARNING GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0088] Layer li1     Track-Pitch = 0.4600  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met1    Track-Pitch = 0.3400  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met2    Track-Pitch = 0.4600  line-2-Via Pitch: 0.3500
+[INFO GRT-0088] Layer met3    Track-Pitch = 0.6800  line-2-Via Pitch: 0.6150
+[INFO GRT-0088] Layer met4    Track-Pitch = 0.9200  line-2-Via Pitch: 1.0400
+[INFO GRT-0088] Layer met5    Track-Pitch = 3.4000  line-2-Via Pitch: 3.1100
+[INFO GRT-0019] Found 1 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 4
+[INFO GRT-0003] Macros: 2
+[WARNING GRT-0040] Net vccd1 has wires outside die area.
+[WARNING GRT-0040] Net vccd1 has wires outside die area.
+[WARNING GRT-0040] Net vccd1 has wires outside die area.
+[WARNING GRT-0040] Net vccd1 has wires outside die area.
+[WARNING GRT-0040] Net vccd1 has wires outside die area.
+[WARNING GRT-0040] Net vccd1 has wires outside die area.
+[WARNING GRT-0040] Net vccd1 has wires outside die area.
+[WARNING GRT-0040] Net vccd1 has wires outside die area.
+[WARNING GRT-0040] Net vccd1 has wires outside die area.
+[WARNING GRT-0040] Net vccd1 has wires outside die area.
+[WARNING GRT-0040] Net vccd1 has wires outside die area.
+[WARNING GRT-0040] Net vccd1 has wires outside die area.
+[WARNING GRT-0040] Net vssd1 has wires outside die area.
+[WARNING GRT-0040] Net vssd1 has wires outside die area.
+[WARNING GRT-0040] Net vssd1 has wires outside die area.
+[WARNING GRT-0040] Net vssd1 has wires outside die area.
+[WARNING GRT-0040] Net vssd1 has wires outside die area.
+[WARNING GRT-0040] Net vssd1 has wires outside die area.
+[WARNING GRT-0040] Net vssd1 has wires outside die area.
+[WARNING GRT-0040] Net vssd1 has wires outside die area.
+[WARNING GRT-0040] Net vssd1 has wires outside die area.
+[WARNING GRT-0040] Net vssd1 has wires outside die area.
+[WARNING GRT-0040] Net vssd1 has wires outside die area.
+[INFO GRT-0004] Blockages: 44
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+li1        Vertical            0             0          0.00%
+met1       Horizontal     103680         53713          48.19%
+met2       Vertical        77760         45913          40.96%
+met3       Horizontal      51840         32844          36.64%
+met4       Vertical        31104         19619          36.92%
+met5       Horizontal      10368          5112          50.69%
+---------------------------------------------------------------
+
+[INFO GRT-0197] Via related to pin nodes: 89
+[INFO GRT-0198] Via related Steiner nodes: 0
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 109
+[INFO GRT-0112] Final usage 3D: 1147
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+li1                  0             0            0.00%             0 /  0 /  0
+met1             53713           281            0.52%             0 /  0 /  0
+met2             45913           423            0.92%             0 /  0 /  0
+met3             32844             4            0.01%             0 /  0 /  0
+met4             19619            54            0.28%             0 /  0 /  0
+met5              5112            58            1.13%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total           157201           820            0.52%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 6410 um
+[INFO GRT-0006] Repairing antennas, iteration 1.
+[WARNING GRT-0043] No OR_DEFAULT vias defined.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: 
+disconnected net 14  net1
+Notice 0: Split top of 2 T shapes.
+Notice 0: 
+disconnected net 17  net4
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+[INFO GRT-0012] Antenna violations: 11
+[WARNING GRT-0054] Placement of diode ANTENNA_1 will be legalized by detailed placement.
+[WARNING GRT-0054] Placement of diode ANTENNA_2 will be legalized by detailed placement.
+[WARNING GRT-0054] Placement of diode ANTENNA_6 will be legalized by detailed placement.
+[WARNING GRT-0054] Placement of diode ANTENNA_7 will be legalized by detailed placement.
+[WARNING GRT-0054] Placement of diode ANTENNA_8 will be legalized by detailed placement.
+[WARNING GRT-0054] Placement of diode ANTENNA_9 will be legalized by detailed placement.
+[WARNING GRT-0054] Placement of diode ANTENNA_16 will be legalized by detailed placement.
+[WARNING GRT-0054] Placement of diode ANTENNA_21 will be legalized by detailed placement.
+[WARNING GRT-0054] Placement of diode ANTENNA_24 will be legalized by detailed placement.
+[INFO GRT-0015] 25 diodes inserted.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 12
+[INFO GRT-0003] Macros: 2
+[WARNING GRT-0040] Net vccd1 has wires outside die area.
+[WARNING GRT-0040] Net vccd1 has wires outside die area.
+[WARNING GRT-0040] Net vccd1 has wires outside die area.
+[WARNING GRT-0040] Net vccd1 has wires outside die area.
+[WARNING GRT-0040] Net vccd1 has wires outside die area.
+[WARNING GRT-0040] Net vccd1 has wires outside die area.
+[WARNING GRT-0040] Net vccd1 has wires outside die area.
+[WARNING GRT-0040] Net vccd1 has wires outside die area.
+[WARNING GRT-0040] Net vccd1 has wires outside die area.
+[WARNING GRT-0040] Net vccd1 has wires outside die area.
+[WARNING GRT-0040] Net vccd1 has wires outside die area.
+[WARNING GRT-0040] Net vccd1 has wires outside die area.
+[WARNING GRT-0040] Net vssd1 has wires outside die area.
+[WARNING GRT-0040] Net vssd1 has wires outside die area.
+[WARNING GRT-0040] Net vssd1 has wires outside die area.
+[WARNING GRT-0040] Net vssd1 has wires outside die area.
+[WARNING GRT-0040] Net vssd1 has wires outside die area.
+[WARNING GRT-0040] Net vssd1 has wires outside die area.
+[WARNING GRT-0040] Net vssd1 has wires outside die area.
+[WARNING GRT-0040] Net vssd1 has wires outside die area.
+[WARNING GRT-0040] Net vssd1 has wires outside die area.
+[WARNING GRT-0040] Net vssd1 has wires outside die area.
+[WARNING GRT-0040] Net vssd1 has wires outside die area.
+[INFO GRT-0004] Blockages: 44
+[INFO GRT-0009] rerouting 13 nets.
+[INFO GRT-0006] Repairing antennas, iteration 2.
+[WARNING GRT-0043] No OR_DEFAULT vias defined.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: 
+disconnected net 14  net1
+Notice 0: Split top of 2 T shapes.
+Notice 0: 
+disconnected net 15  net2
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: 
+disconnected net 17  net4
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+[INFO GRT-0012] Antenna violations: 0
+[INFO GRT-0014] Routed nets: 22
+[INFO]: Setting RC values...
+min_report
+
+===========================================================================
+report_checks -path_delay min (Hold)
+============================================================================
+Startpoint: reset (input port clocked by clk)
+Endpoint: _6_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (propagated)
+                          2.00    2.00 ^ input external delay
+                  0.04    0.02    2.02 ^ reset (in)
+     1    0.01                           reset (net)
+                  0.04    0.00    2.02 ^ input2/A (sky130_fd_sc_hd__buf_6)
+                  0.16    0.16    2.19 ^ input2/X (sky130_fd_sc_hd__buf_6)
+    11    0.08                           net2 (net)
+                  0.16    0.02    2.21 ^ _3_/A_N (sky130_fd_sc_hd__and3b_1)
+                  0.04    0.19    2.40 v _3_/X (sky130_fd_sc_hd__and3b_1)
+     1    0.00                           _1_ (net)
+                  0.04    0.00    2.40 v _4_/C (sky130_fd_sc_hd__and3_4)
+                  0.08    0.21    2.61 v _4_/X (sky130_fd_sc_hd__and3_4)
+     1    0.04                           _2_ (net)
+                  0.08    0.01    2.62 v _5_/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.07    0.15    2.76 v _5_/X (sky130_fd_sc_hd__clkbuf_2)
+     1    0.02                           _0_ (net)
+                  0.07    0.00    2.76 v _6_/D (sky130_fd_sc_hd__dfxtp_2)
+                                  2.76   data arrival time
+
+                          0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock source latency
+                  0.36    0.27    0.27 ^ clk (in)
+     7    0.08                           clk (net)
+                  0.36    0.00    0.27 ^ _6_/CLK (sky130_fd_sc_hd__dfxtp_2)
+                          0.25    0.52   clock uncertainty
+                          0.00    0.52   clock reconvergence pessimism
+                          0.01    0.53   library hold time
+                                  0.53   data required time
+-----------------------------------------------------------------------------
+                                  0.53   data required time
+                                 -2.76   data arrival time
+-----------------------------------------------------------------------------
+                                  2.23   slack (MET)
+
+
+Startpoint: _6_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: out2 (output port clocked by clk)
+Path Group: clk
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock source latency
+                  0.36    0.24    0.24 ^ clk (in)
+     7    0.08                           clk (net)
+                  0.36    0.00    0.24 ^ _6_/CLK (sky130_fd_sc_hd__dfxtp_2)
+                  0.10    0.44    0.68 v _6_/Q (sky130_fd_sc_hd__dfxtp_2)
+     2    0.04                           net7 (net)
+                  0.10    0.01    0.69 v output7/A (sky130_fd_sc_hd__buf_2)
+                  0.09    0.20    0.89 v output7/X (sky130_fd_sc_hd__buf_2)
+     1    0.03                           out2 (net)
+                  0.09    0.00    0.89 v out2 (out)
+                                  0.89   data arrival time
+
+                          0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (propagated)
+                          0.25    0.25   clock uncertainty
+                          0.00    0.25   clock reconvergence pessimism
+                         -2.00   -1.75   output external delay
+                                 -1.75   data required time
+-----------------------------------------------------------------------------
+                                 -1.75   data required time
+                                 -0.89   data arrival time
+-----------------------------------------------------------------------------
+                                  2.64   slack (MET)
+
+
+min_report_end
+max_report
+
+===========================================================================
+report_checks -path_delay max (Setup)
+============================================================================
+Startpoint: _6_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: out2 (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock source latency
+                  0.36    0.27    0.27 ^ clk (in)
+     7    0.08                           clk (net)
+                  0.36    0.00    0.27 ^ _6_/CLK (sky130_fd_sc_hd__dfxtp_2)
+                  0.20    0.54    0.82 ^ _6_/Q (sky130_fd_sc_hd__dfxtp_2)
+     2    0.04                           net7 (net)
+                  0.20    0.01    0.82 ^ output7/A (sky130_fd_sc_hd__buf_2)
+                  0.18    0.26    1.09 ^ output7/X (sky130_fd_sc_hd__buf_2)
+     1    0.03                           out2 (net)
+                  0.18    0.00    1.09 ^ out2 (out)
+                                  1.09   data arrival time
+
+                         10.00   10.00   clock clk (rise edge)
+                          0.00   10.00   clock network delay (propagated)
+                         -0.25    9.75   clock uncertainty
+                          0.00    9.75   clock reconvergence pessimism
+                         -2.00    7.75   output external delay
+                                  7.75   data required time
+-----------------------------------------------------------------------------
+                                  7.75   data required time
+                                 -1.09   data arrival time
+-----------------------------------------------------------------------------
+                                  6.66   slack (MET)
+
+
+Startpoint: reset (input port clocked by clk)
+Endpoint: _6_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (propagated)
+                          2.00    2.00 v input external delay
+                  0.02    0.01    2.01 v reset (in)
+     1    0.01                           reset (net)
+                  0.02    0.00    2.01 v input2/A (sky130_fd_sc_hd__buf_6)
+                  0.08    0.15    2.16 v input2/X (sky130_fd_sc_hd__buf_6)
+    11    0.08                           net2 (net)
+                  0.08    0.02    2.18 v _3_/A_N (sky130_fd_sc_hd__and3b_1)
+                  0.06    0.24    2.42 ^ _3_/X (sky130_fd_sc_hd__and3b_1)
+     1    0.00                           _1_ (net)
+                  0.06    0.00    2.42 ^ _4_/C (sky130_fd_sc_hd__and3_4)
+                  0.15    0.28    2.70 ^ _4_/X (sky130_fd_sc_hd__and3_4)
+     1    0.04                           _2_ (net)
+                  0.15    0.01    2.71 ^ _5_/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.09    0.18    2.90 ^ _5_/X (sky130_fd_sc_hd__clkbuf_2)
+     1    0.02                           _0_ (net)
+                  0.09    0.00    2.90 ^ _6_/D (sky130_fd_sc_hd__dfxtp_2)
+                                  2.90   data arrival time
+
+                         10.00   10.00   clock clk (rise edge)
+                          0.00   10.00   clock source latency
+                  0.36    0.24   10.24 ^ clk (in)
+     7    0.08                           clk (net)
+                  0.36    0.00   10.24 ^ _6_/CLK (sky130_fd_sc_hd__dfxtp_2)
+                         -0.25    9.99   clock uncertainty
+                          0.00    9.99   clock reconvergence pessimism
+                         -0.02    9.97   library setup time
+                                  9.97   data required time
+-----------------------------------------------------------------------------
+                                  9.97   data required time
+                                 -2.90   data arrival time
+-----------------------------------------------------------------------------
+                                  7.07   slack (MET)
+
+
+max_report_end
+check_report
+
+===========================================================================
+report_checks -unconstrained
+============================================================================
+Startpoint: _6_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: out2 (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock source latency
+                  0.36    0.27    0.27 ^ clk (in)
+     7    0.08                           clk (net)
+                  0.36    0.00    0.27 ^ _6_/CLK (sky130_fd_sc_hd__dfxtp_2)
+                  0.20    0.54    0.82 ^ _6_/Q (sky130_fd_sc_hd__dfxtp_2)
+     2    0.04                           net7 (net)
+                  0.20    0.01    0.82 ^ output7/A (sky130_fd_sc_hd__buf_2)
+                  0.18    0.26    1.09 ^ output7/X (sky130_fd_sc_hd__buf_2)
+     1    0.03                           out2 (net)
+                  0.18    0.00    1.09 ^ out2 (out)
+                                  1.09   data arrival time
+
+                         10.00   10.00   clock clk (rise edge)
+                          0.00   10.00   clock network delay (propagated)
+                         -0.25    9.75   clock uncertainty
+                          0.00    9.75   clock reconvergence pessimism
+                         -2.00    7.75   output external delay
+                                  7.75   data required time
+-----------------------------------------------------------------------------
+                                  7.75   data required time
+                                 -1.09   data arrival time
+-----------------------------------------------------------------------------
+                                  6.66   slack (MET)
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+No paths found.
+check_report_end
+check_slew
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+max fanout
+
+Pin                                   Limit Fanout  Slack
+---------------------------------------------------------
+input2/X                                  5     11     -6 (VIOLATED)
+clk                                       5      7     -2 (VIOLATED)
+
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 2
+max cap violation count 0
+============================================================================
+check_slew_end
+tns_report
+
+===========================================================================
+ report_tns
+============================================================================
+tns 0.00
+tns_report_end
+wns_report
+
+===========================================================================
+ report_wns
+============================================================================
+wns 0.00
+wns_report_end
+worst_slack
+
+===========================================================================
+ report_worst_slack -max (Setup)
+============================================================================
+worst slack 6.66
+
+===========================================================================
+ report_worst_slack -min (Hold)
+============================================================================
+worst slack 2.23
+worst_slack_end
+clock_skew
+
+===========================================================================
+ report_clock_skew
+============================================================================
+Clock clk
+No launch/capture paths found.
+
+clock_skew_end
+power_report
+
+===========================================================================
+ report_power
+============================================================================
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             4.08e-06   1.95e-07   8.44e-12   4.27e-06  58.0%
+Combinational          8.54e-07   2.23e-06   2.10e-09   3.09e-06  42.0%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  4.93e-06   2.43e-06   2.11e-09   7.36e-06 100.0%
+                          67.0%      33.0%       0.0%
+power_report_end
+area_report
+
+===========================================================================
+ report_design_area
+============================================================================
+Design area 35883 u^2 15% utilization.
+area_report_end

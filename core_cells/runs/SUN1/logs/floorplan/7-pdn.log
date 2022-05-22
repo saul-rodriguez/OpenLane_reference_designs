@@ -1,0 +1,59 @@
+OpenROAD 79a46b62da64bbebc18f06b20c42211046de719a 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /openlane/designs/core_cells/runs/SUN1/tmp/merged.unpadded.nom.lef
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 442 library cells
+[INFO ODB-0226] Finished LEF file:  /openlane/designs/core_cells/runs/SUN1/tmp/merged.unpadded.nom.lef
+[INFO ODB-0127] Reading DEF file: /openlane/designs/core_cells/runs/SUN1/results/floorplan/core_cells.def
+[INFO ODB-0128] Design: core_cells
+[INFO ODB-0130]     Created 8 pins.
+[INFO ODB-0131]     Created 3349 components and 8001 component-terminals.
+[INFO ODB-0133]     Created 15 nets and 27 connections.
+[INFO ODB-0134] Finished DEF file: /openlane/designs/core_cells/runs/SUN1/results/floorplan/core_cells.def
+[INFO PDN-0001] Inserting grid: stdcell_grid
+[INFO PDN-0001] Inserting grid: macro - c1
+[INFO PDN-0001] Inserting grid: macro - c2
+[WARNING PSM-0016] Voltage pad location (VSRC) file not specified, defaulting pad location to checkerboard pattern on core area.
+[WARNING PSM-0017] X direction bump pitch is not specified, defaulting to 140um.
+[WARNING PSM-0018] Y direction bump pitch is not specified, defaulting to 140um.
+[WARNING PSM-0019] Voltage on net vccd1 is not explicitly set.
+[WARNING PSM-0022] Using voltage 1.800V for VDD network.
+[WARNING PSM-0065] VSRC location not specified, using default checkerboard pattern with one VDD every size bumps in x-direction and one in two bumps in the y-direction
+[WARNING PSM-0030] VSRC location at (285.520um, 150.880um) and size 10.000um, is not located on an existing power stripe node. Moving to closest node at (314.950um, 190.880um).
+[INFO PSM-0031] Number of PDN nodes on net vccd1 = 8723.
+[INFO PSM-0064] Number of voltage sources = 2.
+[INFO PSM-0040] All PDN stripes on net vccd1 are connected.
+[WARNING PSM-0016] Voltage pad location (VSRC) file not specified, defaulting pad location to checkerboard pattern on core area.
+[WARNING PSM-0017] X direction bump pitch is not specified, defaulting to 140um.
+[WARNING PSM-0018] Y direction bump pitch is not specified, defaulting to 140um.
+[WARNING PSM-0019] Voltage on net vssd1 is not explicitly set.
+[WARNING PSM-0021] Using voltage 0.000V for ground network.
+[WARNING PSM-0065] VSRC location not specified, using default checkerboard pattern with one VDD every size bumps in x-direction and one in two bumps in the y-direction
+[WARNING PSM-0030] VSRC location at (5.520um, 10.880um) and size 10.000um, is not located on an existing power stripe node. Moving to closest node at (-14.680um, -9.320um).
+[WARNING PSM-0030] VSRC location at (285.520um, 150.880um) and size 10.000um, is not located on an existing power stripe node. Moving to closest node at (275.520um, 100.880um).
+[INFO PSM-0031] Number of PDN nodes on net vssd1 = 8625.
+[INFO PSM-0064] Number of voltage sources = 2.
+[INFO PSM-0040] All PDN stripes on net vssd1 are connected.
+[INFO]: Setting RC values...
+[INFO PSM-0002] Output voltage file is specified as: /openlane/designs/core_cells/runs/SUN1/tmp/floorplan/7-pdn.pga.rpt.
+[WARNING PSM-0016] Voltage pad location (VSRC) file not specified, defaulting pad location to checkerboard pattern on core area.
+[WARNING PSM-0017] X direction bump pitch is not specified, defaulting to 140um.
+[WARNING PSM-0018] Y direction bump pitch is not specified, defaulting to 140um.
+[WARNING PSM-0019] Voltage on net vccd1 is not explicitly set.
+[WARNING PSM-0022] Using voltage 1.800V for VDD network.
+[WARNING PSM-0065] VSRC location not specified, using default checkerboard pattern with one VDD every size bumps in x-direction and one in two bumps in the y-direction
+[WARNING PSM-0030] VSRC location at (285.520um, 150.880um) and size 10.000um, is not located on an existing power stripe node. Moving to closest node at (314.950um, 190.880um).
+[INFO PSM-0031] Number of PDN nodes on net vccd1 = 8723.
+[WARNING PSM-0071] Instance _3_ is not placed. Therefore, the power drawn by this instance is not considered for IR  drop estimation. Please run analyze_power_grid after instances are placed.
+[WARNING PSM-0071] Instance _4_ is not placed. Therefore, the power drawn by this instance is not considered for IR  drop estimation. Please run analyze_power_grid after instances are placed.
+[WARNING PSM-0071] Instance _5_ is not placed. Therefore, the power drawn by this instance is not considered for IR  drop estimation. Please run analyze_power_grid after instances are placed.
+[WARNING PSM-0071] Instance _6_ is not placed. Therefore, the power drawn by this instance is not considered for IR  drop estimation. Please run analyze_power_grid after instances are placed.
+[INFO PSM-0064] Number of voltage sources = 2.
+[INFO PSM-0040] All PDN stripes on net vccd1 are connected.
+########## IR report #################
+Worstcase voltage: 1.80e+00 V
+Average IR drop  : 1.19e-09 V
+Worstcase IR drop: 1.81e-09 V
+######################################

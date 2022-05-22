@@ -1,0 +1,42 @@
+
+===========================================================================
+report_checks -unconstrained
+============================================================================
+Startpoint: _6_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: out2 (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock source latency
+                  0.33    0.25    0.25 ^ clk (in)
+     3    0.07                           clk (net)
+                  0.33    0.00    0.25 ^ _6_/CLK (sky130_fd_sc_hd__dfxtp_2)
+                  0.20    0.54    0.79 ^ _6_/Q (sky130_fd_sc_hd__dfxtp_2)
+     1    0.04                           net7 (net)
+                  0.20    0.01    0.80 ^ output7/A (sky130_fd_sc_hd__buf_2)
+                  0.17    0.26    1.06 ^ output7/X (sky130_fd_sc_hd__buf_2)
+     1    0.03                           out2 (net)
+                  0.17    0.00    1.06 ^ out2 (out)
+                                  1.06   data arrival time
+
+                         10.00   10.00   clock clk (rise edge)
+                          0.00   10.00   clock network delay (propagated)
+                         -0.25    9.75   clock uncertainty
+                          0.00    9.75   clock reconvergence pessimism
+                         -2.00    7.75   output external delay
+                                  7.75   data required time
+-----------------------------------------------------------------------------
+                                  7.75   data required time
+                                 -1.06   data arrival time
+-----------------------------------------------------------------------------
+                                  6.69   slack (MET)
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+No paths found.

@@ -1,0 +1,47 @@
+Warning: Equate pins:  cell counter is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: counter                         |Circuit 2: counter                         
+-------------------------------------------|-------------------------------------------
+clk                                        |clk                                        
+enable                                     |enable                                     
+out[0]                                     |out[0]                                     
+out[1]                                     |out[1]                                     
+out[2]                                     |out[2]                                     
+out[3]                                     |out[3]                                     
+reset                                      |reset                                      
+vccd1                                      |vccd1                                      
+vssd1                                      |vssd1                                      
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes counter and counter are equivalent.
+
+Subcircuit summary:
+Circuit 1: core                            |Circuit 2: core                            
+-------------------------------------------|-------------------------------------------
+counter (2)                                |counter (2)                                
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 13                         |Number of nets: 13                         
+---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match uniquely.
+Circuits match correctly.
+
+Subcircuit pins:
+Circuit 1: core                            |Circuit 2: core                            
+-------------------------------------------|-------------------------------------------
+out2                                       |out2                                       
+out1[3]                                    |out1[3]                                    
+out1[2]                                    |out1[2]                                    
+out1[1]                                    |out1[1]                                    
+out1[0]                                    |out1[0]                                    
+clk                                        |clk                                        
+enable                                     |enable                                     
+reset                                      |reset                                      
+vccd1                                      |vccd1                                      
+vssd1                                      |vssd1                                      
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes core and core are equivalent.
+Circuits match uniquely.

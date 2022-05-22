@@ -1,0 +1,5 @@
+
+24. Executing CHECK pass (checking for obvious problems).
+Checking module core_cells...
+Warning: Wire core_cells.\out2 is used but has no driver.
+Found and reported 1 problems.

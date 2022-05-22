@@ -1,0 +1,1 @@
+lvs {/openlane/designs/core/runs/SUN1/results/signoff/core.spice core} {/openlane/designs/core/runs/SUN1/tmp/signoff/27-powered_netlist.v core} /home/saul/installs/openlane/OpenLane/pdks/sky130A/libs.tech/netgen/sky130A_setup.tcl /openlane/designs/core/runs/SUN1/logs/signoff/30-core.lef.log -json

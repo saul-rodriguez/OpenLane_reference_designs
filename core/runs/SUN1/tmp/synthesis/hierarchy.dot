@@ -1,0 +1,30 @@
+digraph "core" {
+label="core";
+rankdir="LR";
+remincross=true;
+n1 [ shape=diamond, label="out_c2", color="black", fontcolor="black" ];
+n2 [ shape=octagon, label="out2", color="black", fontcolor="black" ];
+n3 [ shape=octagon, label="out1", color="black", fontcolor="black" ];
+n4 [ shape=octagon, label="reset", color="black", fontcolor="black" ];
+n5 [ shape=octagon, label="clk", color="black", fontcolor="black" ];
+n6 [ shape=octagon, label="enable", color="black", fontcolor="black" ];
+n7 [ shape=octagon, label="vssd1", color="black", fontcolor="black" ];
+n8 [ shape=octagon, label="vccd1", color="black", fontcolor="black" ];
+c10 [ shape=record, label="{{<p5> clk|<p6> enable|<p4> reset}|c2\ncounter|{<p9> out|<p8> vccd1|<p7> vssd1}}" ];
+c11 [ shape=record, label="{{<p5> clk|<p6> enable|<p4> reset}|c1\ncounter|{<p9> out|<p8> vccd1|<p7> vssd1}}" ];
+x0 [ shape=record, style=rounded, label="<s0> 3:3 - 0:0 " ];
+c10:p9:e -> n1:w [color="black", label=""];
+n1:e -> x0:s0:w [color="black", label=""];
+x0:e -> n2:w [color="black", label=""];
+c11:p9:e -> n3:w [color="black", style="setlinewidth(3)", label=""];
+n4:e -> c10:p4:w [color="black", label=""];
+n4:e -> c11:p4:w [color="black", label=""];
+n5:e -> c10:p5:w [color="black", label=""];
+n5:e -> c11:p5:w [color="black", label=""];
+n6:e -> c10:p6:w [color="black", label=""];
+n6:e -> c11:p6:w [color="black", label=""];
+c10:p7:e -> n7:w [color="black", label=""];
+c11:p7:e -> n7:w [color="black", label=""];
+c10:p8:e -> n8:w [color="black", label=""];
+c11:p8:e -> n8:w [color="black", label=""];
+}

@@ -1,0 +1,23 @@
+
+25. Printing statistics.
+
+=== core_cells ===
+
+   Number of wires:                 12
+   Number of wire bits:             15
+   Number of public wires:           9
+   Number of public wire bits:      12
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     counter                         2
+     sky130_fd_sc_hd__and3_2         1
+     sky130_fd_sc_hd__and3b_2        1
+     sky130_fd_sc_hd__buf_1          1
+     sky130_fd_sc_hd__dfxtp_2        1
+
+   Area for cell type \counter is unknown!
+
+   Chip area for module '\core_cells': 42.540800
+

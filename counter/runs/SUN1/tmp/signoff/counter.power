@@ -1,0 +1,6 @@
+vccd1 power 1.8
+vssd1 power 0.0
+#define std_input min@vssd1 max@vccd1
+clk input std_input
+enable input std_input
+reset input std_input

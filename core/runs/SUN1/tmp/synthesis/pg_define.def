@@ -1,0 +1,37 @@
+VERSION 5.8 ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN core ;
+UNITS DISTANCE MICRONS 1000 ;
+COMPONENTS 2 ;
+    - c1 counter ;
+    - c2 counter ;
+END COMPONENTS
+PINS 10 ;
+    - clk + NET clk + DIRECTION INPUT + USE SIGNAL ;
+    - enable + NET enable + DIRECTION INPUT + USE SIGNAL ;
+    - out1[0] + NET out1[0] + DIRECTION OUTPUT + USE SIGNAL ;
+    - out1[1] + NET out1[1] + DIRECTION OUTPUT + USE SIGNAL ;
+    - out1[2] + NET out1[2] + DIRECTION OUTPUT + USE SIGNAL ;
+    - out1[3] + NET out1[3] + DIRECTION OUTPUT + USE SIGNAL ;
+    - out2 + NET out2 + DIRECTION OUTPUT + USE SIGNAL ;
+    - reset + NET reset + DIRECTION INPUT + USE SIGNAL ;
+    - vccd1 + NET vccd1 + DIRECTION INOUT + USE SIGNAL ;
+    - vssd1 + NET vssd1 + DIRECTION INOUT + USE SIGNAL ;
+END PINS
+NETS 13 ;
+    - clk ( PIN clk ) ( c2 clk ) ( c1 clk ) + USE SIGNAL ;
+    - enable ( PIN enable ) ( c2 enable ) ( c1 enable ) + USE SIGNAL ;
+    - out1[0] ( PIN out1[0] ) ( c1 out[0] ) + USE SIGNAL ;
+    - out1[1] ( PIN out1[1] ) ( c1 out[1] ) + USE SIGNAL ;
+    - out1[2] ( PIN out1[2] ) ( c1 out[2] ) + USE SIGNAL ;
+    - out1[3] ( PIN out1[3] ) ( c1 out[3] ) + USE SIGNAL ;
+    - out2 ( PIN out2 ) ( c2 out[3] ) + USE SIGNAL ;
+    - out_c2\[0\] ( c2 out[0] ) + USE SIGNAL ;
+    - out_c2\[1\] ( c2 out[1] ) + USE SIGNAL ;
+    - out_c2\[2\] ( c2 out[2] ) + USE SIGNAL ;
+    - reset ( PIN reset ) ( c2 reset ) ( c1 reset ) + USE SIGNAL ;
+    - vccd1 ( PIN vccd1 ) ( c2 vccd1 ) ( c1 vccd1 ) + USE SIGNAL ;
+    - vssd1 ( PIN vssd1 ) ( c2 vssd1 ) ( c1 vssd1 ) + USE SIGNAL ;
+END NETS
+END DESIGN

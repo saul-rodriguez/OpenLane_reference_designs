@@ -1,0 +1,34 @@
+OpenROAD 79a46b62da64bbebc18f06b20c42211046de719a 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /openlane/designs/core_cells/runs/SUN5/tmp/merged.nom.lef
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 442 library cells
+[INFO ODB-0226] Finished LEF file:  /openlane/designs/core_cells/runs/SUN5/tmp/merged.nom.lef
+[INFO ODB-0127] Reading DEF file: /openlane/designs/core_cells/runs/SUN5/results/routing/core_cells.def
+[INFO ODB-0128] Design: core_cells
+[INFO ODB-0130]     Created 10 pins.
+[INFO ODB-0131]     Created 19706 components and 73470 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 73402 connections.
+[INFO ODB-0133]     Created 25 nets and 68 connections.
+[INFO ODB-0134] Finished DEF file: /openlane/designs/core_cells/runs/SUN5/results/routing/core_cells.def
+Using RCX ruleset '/home/saul/installs/openlane/OpenLane/pdks/sky130A/libs.tech/openlane/rules.openrcx.sky130A.nom.spef_extractor'...
+[INFO RCX-0431] Defined process_corner X with ext_model_index 0
+[INFO RCX-0029] Defined extraction corner X
+[INFO RCX-0008] extracting parasitics of core_cells ...
+Notice 0: Split top of 4 T shapes.
+[INFO RCX-0435] Reading extraction model file /home/saul/installs/openlane/OpenLane/pdks/sky130A/libs.tech/openlane/rules.openrcx.sky130A.nom.spef_extractor ...
+[INFO RCX-0436] RC segment generation core_cells (max_merge_res 50.0) ...
+[INFO RCX-0040] Final 129 rc segments
+[INFO RCX-0439] Coupling Cap extraction core_cells ...
+[INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
+[INFO RCX-0043] 1539 wires to be extracted
+[INFO RCX-0442] 95% completion -- 1466 wires have been extracted
+[INFO RCX-0442] 100% completion -- 1539 wires have been extracted
+[INFO RCX-0045] Extract 25 nets, 154 rsegs, 154 caps, 26 ccs
+[INFO RCX-0015] Finished extracting core_cells.
+Writing result to /openlane/designs/core_cells/runs/SUN5/results/routing/core_cells.nom.spef...
+[INFO RCX-0016] Writing SPEF ...
+[INFO RCX-0443] 25 nets finished
+[INFO RCX-0017] Finished writing SPEF ...

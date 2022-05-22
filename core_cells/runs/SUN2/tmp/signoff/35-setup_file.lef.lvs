@@ -1,0 +1,1 @@
+lvs {/openlane/designs/core_cells/runs/SUN2/results/signoff/core_cells.spice core_cells} {/openlane/designs/core_cells/runs/SUN2/tmp/signoff/32-powered_netlist.v core_cells} /home/saul/installs/openlane/OpenLane/pdks/sky130A/libs.tech/netgen/sky130A_setup.tcl /openlane/designs/core_cells/runs/SUN2/logs/signoff/35-core_cells.lef.log -json

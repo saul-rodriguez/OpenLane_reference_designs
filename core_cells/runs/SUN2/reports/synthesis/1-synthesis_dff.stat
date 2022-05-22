@@ -1,0 +1,20 @@
+
+17. Printing statistics.
+
+=== core_cells ===
+
+   Number of wires:                 10
+   Number of wire bits:             16
+   Number of public wires:           6
+   Number of public wire bits:      12
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $_ANDNOT_                       1
+     $_AND_                          1
+     $_MUX_                          1
+     $_NAND_                         1
+     counter                         2
+     sky130_fd_sc_hd__dfxtp_2        1
+

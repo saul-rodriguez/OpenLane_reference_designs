@@ -1,0 +1,22 @@
+digraph "counter" {
+label="counter";
+rankdir="LR";
+remincross=true;
+n3 [ shape=octagon, label="reset", color="black", fontcolor="black" ];
+n4 [ shape=octagon, label="clk", color="black", fontcolor="black" ];
+n5 [ shape=octagon, label="enable", color="black", fontcolor="black" ];
+n6 [ shape=octagon, label="out", color="black", fontcolor="black" ];
+v0 [ label="1" ];
+c10 [ shape=record, label="{{<p7> A|<p8> B}|$2\n$add|{<p9> Y}}" ];
+x2 [ shape=record, style=rounded, label="<s0> 3:0 - 3:0 " ];
+p1 [shape=box, style=rounded, label="PROC $1\n/openlane/designs/counter/src/counter.v:22.1-29.4"];
+c10:p9:e -> x2:s0:w [color="black", style="setlinewidth(3)", label=""];
+n3:e -> p1:w [color="black", label=""];
+n4:e -> p1:w [color="black", label=""];
+n5:e -> p1:w [color="black", label=""];
+p1:e -> n6:w [color="black", style="setlinewidth(3)", label=""];
+n6:e -> c10:p7:w [color="black", style="setlinewidth(3)", label=""];
+n6:e -> p1:w [color="black", style="setlinewidth(3)", label=""];
+v0:e -> c10:p8:w [color="black", style="setlinewidth(3)", label=""];
+x2:e -> p1:w [color="black", style="setlinewidth(3)", label=""];
+}

@@ -1,0 +1,11 @@
+* NGSPICE file created from core.ext - technology: sky130A
+
+* Black-box entry subcircuit for counter abstract view
+.subckt counter clk enable out[0] out[1] out[2] out[3] reset vccd1 vssd1
+.ends
+
+.subckt core clk enable out1[0] out1[1] out1[2] out1[3] out2 reset vccd1 vssd1
+Xc1 clk enable out1[0] out1[1] out1[2] out1[3] reset vccd1 vssd1 counter
+Xc2 clk enable c2/out[0] c2/out[1] c2/out[2] out2 reset vccd1 vssd1 counter
+.ends
+
